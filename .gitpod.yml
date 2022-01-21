@@ -1,0 +1,22 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 3000
+    onOpen: open-browser
+    visibility: public
+
+tasks:
+  - init: npm install
+    # command: npm run dev
+    
+vscode:
+  extensions:
+  - dbaeumer.vscode-eslint
+  - esbenp.prettier-vscode
+  - alefragnani.bookmarks
+  - humao.rest-client
+  - gruntfuggly.todo-tree
+  - formulahendry.auto-rename-tag
+  - zignd.html-css-class-completion
+  - svelte.svelte-vscode

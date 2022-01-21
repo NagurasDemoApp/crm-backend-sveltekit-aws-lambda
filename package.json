@@ -1,0 +1,28 @@
+{
+  "name": "crm-backend-sveltekit-cloudflare",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "publish": "wrangler publish",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-cloudflare-workers": "^1.0.0-next.23",
+    "@sveltejs/kit": "next",
+    "@tsndr/cloudflare-worker-jwt": "^1.1.5",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "svelte": "^3.44.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "dayjs": "^1.10.7"
+  }
+}
