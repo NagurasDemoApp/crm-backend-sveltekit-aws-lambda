@@ -1,5 +1,5 @@
-// import jwt from 'jsonwebtoken'
-import jwt from '@tsndr/cloudflare-worker-jwt'
+import jwt from 'jsonwebtoken'
+// import jwt from '@tsndr/cloudflare-worker-jwt'
 const {sign, verify} = jwt
 const jwtSecret = 'dgsrtehyjrty6agfr45g56yh'
 
