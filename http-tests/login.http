@@ -1,10 +1,10 @@
-POST http://localhost:3000/login
-Content-Type: application/json
+# POST https://4jwfwdowzd.execute-api.eu-central-1.amazonaws.com/prod/login
+# Content-Type: application/json
 
-{
-  "email": "bob@inter.net",
-  "password": "12345"
-}
+# {
+#   "email": "bob@inter.net",
+#   "password": "12345"
+# }
 
 # post https://crm-backend.naguras.workers.dev/login
 # Content-Type: application/json
@@ -14,5 +14,11 @@ Content-Type: application/json
 #   "password": "12345"
 # }
 
-# GET https://crm-backend.naguras.workers.dev/contacts
+
+GET https://4jwfwdowzd.execute-api.eu-central-1.amazonaws.com/prod/contacts
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY3JtLGFnZW50LGJvYkBpbnRlci5uZXQsMDAwMSIsImlhdCI6MTY0MjkzOTIyMSwiZXhwIjoxNjQyOTgyNDIxfQ.z9SxJKg03aqg5M4fccjuyuJtMC05zXtqH0AXz2PWFho
+
+
+# GET http://localhost:3000/contacts
 

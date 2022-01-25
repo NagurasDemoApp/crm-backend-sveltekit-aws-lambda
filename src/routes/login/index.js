@@ -16,13 +16,13 @@ export async function post({ request }) {
     }
   }
 
-  loginResult.token = createToken(loginResult.role, loginResult.email, loginResult._id)
+  loginResult.token = await createToken(loginResult.role, loginResult.email, loginResult._id)
   loginResult.expiry = dayjs().add(12, 'hours').valueOf()
 
   return {
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    },
+    // headers: {
+    //   "Access-Control-Allow-Origin": "*",
+    // },
     body: loginResult
   }
 }

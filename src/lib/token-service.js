@@ -1,5 +1,4 @@
 import jwt from 'jsonwebtoken'
-// import jwt from '@tsndr/cloudflare-worker-jwt'
 const {sign, verify} = jwt
 const jwtSecret = 'dgsrtehyjrty6agfr45g56yh'
 
@@ -11,10 +10,8 @@ const createToken = (role, username, id) => {
     jwtSecret,
     { expiresIn: '12h' }
   )
-  // }, jwtSecret, {expiresIn: '12h'})
 }
 
-// Used in Admin app
 const checkToken = (token) => {
   const tkn = token
   try {
